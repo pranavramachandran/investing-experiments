@@ -1,0 +1,11 @@
+graph TB
+    AA(((Every N Minutes)))
+    AA --> A
+    subgraph A[Processing]
+        direction LR
+        BA[[Data Preparation &\nEnrichment using Models]]
+        CA[[Strategy Evaluation &\nSynthesis]]
+        DA[[Recommendation Generation &\nGrading]]
+        BA --> CA
+        CA --> DA
+    end

@@ -1,0 +1,8 @@
+ graph TB
+    BA[Download Raw Data\nfrom polygon.io]
+    BA --> BB[("one file per day\n(or other units of time)")]
+    BB --> BC[Pre-processing\nFix errors\nAdd Stats measures]
+    BC --> BD[(one file per stock)] 
+    BD --> BE[Run Models\nadd n columns + buy/sell reco]
+    BE --> BF[("Update the 'per Stock Store'")]
+    BF --> BG[Visualize Data]
